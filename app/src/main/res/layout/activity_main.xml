@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#615E5E"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lowerBound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1462dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/upperBound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/lowerHorizental"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/lowerHline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lowerHline"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/upperHorizental"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/upperHline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/upperHline"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/rightVertical"
+        android:layout_width="5dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/lowerBound"
+        app:layout_constraintEnd_toStartOf="@+id/leftVline"
+        app:layout_constraintStart_toStartOf="@+id/leftVline"
+        app:layout_constraintTop_toTopOf="@+id/upperBound"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/leftVertical"
+        android:layout_width="5dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/lowerBound"
+        app:layout_constraintEnd_toStartOf="@+id/rightVline"
+        app:layout_constraintStart_toStartOf="@+id/rightVline"
+        app:layout_constraintTop_toTopOf="@+id/upperBound"
+        app:srcCompat="@drawable/line" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/upperHline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lowerHline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightVline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftVline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="822dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <ImageView
+        android:id="@+id/eleven"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ClickOnImage"
+        app:layout_constraintBottom_toTopOf="@+id/upperHline"
+        app:layout_constraintEnd_toStartOf="@+id/rightVline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/upperBound"
+        app:layout_constraintVertical_bias="0.42"
+        app:srcCompat="@drawable/oo" />
+
+    <ImageView
+        android:id="@+id/twelve"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ClickOnImage"
+        app:layout_constraintBottom_toTopOf="@+id/upperHline"
+        app:layout_constraintEnd_toStartOf="@+id/leftVline"
+        app:layout_constraintStart_toStartOf="@+id/rightVline"
+        app:layout_constraintTop_toTopOf="@+id/upperBound"
+        app:srcCompat="@drawable/xx" />
+
+    <ImageView
+        android:id="@+id/thirteen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ClickOnImage"
+        app:layout_constraintBottom_toTopOf="@+id/upperHline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/leftVline"
+        app:layout_constraintTop_toTopOf="@+id/upperBound"
+        app:srcCompat="@drawable/oo" />
+
+    <ImageView
+        android:id="@+id/twentyOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ClickOnImage"
+        app:layout_constraintBottom_toTopOf="@+id/lowerHline"
+        app:layout_constraintEnd_toStartOf="@+id/rightVline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/upperHline"
+        app:srcCompat="@drawable/xx" />
+
+    <ImageView
+        android:id="@+id/twentyTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ClickOnImage"
+        app:layout_constraintBottom_toTopOf="@+id/lowerHorizental"
+        app:layout_constraintEnd_toStartOf="@+id/leftVline"
+        app:layout_constraintStart_toStartOf="@+id/rightVline"
+        app:layout_constraintTop_toTopOf="@+id/upperHline"
+        app:srcCompat="@drawable/oo" />
+
+    <ImageView
+        android:id="@+id/twentyThree"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ClickOnImage"
+        app:layout_constraintBottom_toTopOf="@+id/lowerHline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/leftVline"
+        app:layout_constraintTop_toTopOf="@+id/upperHline"
+        app:srcCompat="@drawable/oo" />
+
+    <ImageView
+        android:id="@+id/thirtyOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ClickOnImage"
+        app:layout_constraintBottom_toTopOf="@+id/lowerBound"
+        app:layout_constraintEnd_toStartOf="@+id/rightVline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lowerHline"
+        app:srcCompat="@drawable/xx" />
+
+    <ImageView
+        android:id="@+id/thirtyTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ClickOnImage"
+        app:layout_constraintBottom_toTopOf="@+id/lowerBound"
+        app:layout_constraintEnd_toStartOf="@+id/leftVline"
+        app:layout_constraintStart_toStartOf="@+id/rightVline"
+        app:layout_constraintTop_toTopOf="@+id/lowerHline"
+        app:srcCompat="@drawable/xx" />
+
+    <ImageView
+        android:id="@+id/thirtyThree"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="ClickOnImage"
+        app:layout_constraintBottom_toTopOf="@+id/lowerBound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/leftVline"
+        app:layout_constraintTop_toTopOf="@+id/lowerHline"
+        app:srcCompat="@drawable/oo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
