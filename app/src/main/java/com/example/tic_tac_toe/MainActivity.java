@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.tictactoe.R;
+import com.example.tic_tac_toe.R;
 
 public class MainActivity extends AppCompatActivity {
 
