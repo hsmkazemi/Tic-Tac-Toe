@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#615E5E"
+    android:background="@drawable/wallpaper2you_104129"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -14,14 +14,14 @@
         android:layout_marginBottom="1462dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintGuide_percent="0.8" />
+        app:layout_constraintGuide_percent="0.8016416" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/upperBound"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2"
+        app:layout_constraintGuide_percent="0.20109439"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -101,99 +101,117 @@
         android:id="@+id/eleven"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:alpha="0"
         android:onClick="ClickOnImage"
+        android:padding="15dp"
+        android:tag="00"
         app:layout_constraintBottom_toTopOf="@+id/upperHline"
         app:layout_constraintEnd_toStartOf="@+id/rightVline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/upperBound"
-        app:layout_constraintVertical_bias="0.42"
-        app:srcCompat="@drawable/oo" />
+        app:layout_constraintVertical_bias="0.42" />
 
     <ImageView
         android:id="@+id/twelve"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:alpha="0"
         android:onClick="ClickOnImage"
+        android:padding="15dp"
+        android:tag="01"
         app:layout_constraintBottom_toTopOf="@+id/upperHline"
         app:layout_constraintEnd_toStartOf="@+id/leftVline"
         app:layout_constraintStart_toStartOf="@+id/rightVline"
-        app:layout_constraintTop_toTopOf="@+id/upperBound"
-        app:srcCompat="@drawable/xx" />
+        app:layout_constraintTop_toTopOf="@+id/upperBound" />
 
     <ImageView
         android:id="@+id/thirteen"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:alpha="0"
         android:onClick="ClickOnImage"
+        android:padding="15dp"
+        android:tag="02"
         app:layout_constraintBottom_toTopOf="@+id/upperHline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/leftVline"
-        app:layout_constraintTop_toTopOf="@+id/upperBound"
-        app:srcCompat="@drawable/oo" />
+        app:layout_constraintTop_toTopOf="@+id/upperBound" />
 
     <ImageView
         android:id="@+id/twentyOne"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:alpha="0"
         android:onClick="ClickOnImage"
+        android:padding="15dp"
+        android:tag="10"
         app:layout_constraintBottom_toTopOf="@+id/lowerHline"
         app:layout_constraintEnd_toStartOf="@+id/rightVline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/upperHline"
-        app:srcCompat="@drawable/xx" />
+        app:layout_constraintTop_toTopOf="@+id/upperHline" />
 
     <ImageView
         android:id="@+id/twentyTwo"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:alpha="0"
         android:onClick="ClickOnImage"
-        app:layout_constraintBottom_toTopOf="@+id/lowerHorizental"
+        android:padding="15dp"
+        android:tag="11"
+        app:layout_constraintBottom_toTopOf="@+id/lowerHline"
         app:layout_constraintEnd_toStartOf="@+id/leftVline"
         app:layout_constraintStart_toStartOf="@+id/rightVline"
-        app:layout_constraintTop_toTopOf="@+id/upperHline"
-        app:srcCompat="@drawable/oo" />
+        app:layout_constraintTop_toTopOf="@+id/upperHline" />
 
     <ImageView
         android:id="@+id/twentyThree"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:alpha="0"
         android:onClick="ClickOnImage"
+        android:padding="15dp"
+        android:tag="12"
         app:layout_constraintBottom_toTopOf="@+id/lowerHline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/leftVline"
-        app:layout_constraintTop_toTopOf="@+id/upperHline"
-        app:srcCompat="@drawable/oo" />
+        app:layout_constraintTop_toTopOf="@+id/upperHline" />
 
     <ImageView
         android:id="@+id/thirtyOne"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:alpha="0"
         android:onClick="ClickOnImage"
+        android:padding="15dp"
+        android:tag="20"
         app:layout_constraintBottom_toTopOf="@+id/lowerBound"
         app:layout_constraintEnd_toStartOf="@+id/rightVline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/lowerHline"
-        app:srcCompat="@drawable/xx" />
+        app:layout_constraintTop_toTopOf="@+id/lowerHline" />
 
     <ImageView
         android:id="@+id/thirtyTwo"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:alpha="0"
         android:onClick="ClickOnImage"
+        android:padding="15dp"
+        android:tag="21"
         app:layout_constraintBottom_toTopOf="@+id/lowerBound"
         app:layout_constraintEnd_toStartOf="@+id/leftVline"
         app:layout_constraintStart_toStartOf="@+id/rightVline"
-        app:layout_constraintTop_toTopOf="@+id/lowerHline"
-        app:srcCompat="@drawable/xx" />
+        app:layout_constraintTop_toTopOf="@+id/lowerHline" />
 
     <ImageView
         android:id="@+id/thirtyThree"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:alpha="0"
         android:onClick="ClickOnImage"
+        android:padding="15dp"
+        android:tag="22"
         app:layout_constraintBottom_toTopOf="@+id/lowerBound"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/leftVline"
-        app:layout_constraintTop_toTopOf="@+id/lowerHline"
-        app:srcCompat="@drawable/oo" />
+        app:layout_constraintTop_toTopOf="@+id/lowerHline" />
 </androidx.constraintlayout.widget.ConstraintLayout>
